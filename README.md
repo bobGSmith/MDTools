@@ -17,7 +17,7 @@ Run the script from terminal, it takes one arg which is the path to your md file
 	$ python mdContents.py /path/your_file.md 
 
 ## Why  <a name = 3></a>
-I also need to learn how to use github properly for some other projects so I'm testing a few things with this. 
+I also need to learn how to use github properly for some other projects, so I'm testing a few things here. Also, the Table of Contents section for this README.md was made with the mdContents.py script :)
 
 
 
