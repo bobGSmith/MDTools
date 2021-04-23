@@ -5,7 +5,7 @@ Created on Fri Apr 23 11:38:31 2021
 @author: bobby
 """
 # ADD TABLE OF CONTENTS TO MARKDOWN FILES # 
-"""
+
 import sys
 
 test = sys.argv[1]
@@ -15,9 +15,9 @@ if overwrite in ["y","Y","yes","Yes","YES"]:
 else:
     newfile = input("enter new path/filename:\n")
 
-"""
-test = "TestMD1_output.md"
-newfile = "TestMD1_output_remove.md"
+
+#test = "TestMD1_output.md"
+#newfile = "TestMD1_output_remove.md"
 
 continue_script = True
 
@@ -37,7 +37,7 @@ if '## Table of Contents\n' in lines:
         del lines[cont_start:cont_end+1]
         import re
         for i in range(len(lines)):
-            if lines[i][:2] == "##":
+            if lines[i][:3] == "## ":
                 lines[i] = re.sub(r'<a name = (.*)</a>', "", lines[i])
     else:
         print("Warning: ## Table of Contents section must end with a empty line after last item")
@@ -49,7 +49,7 @@ if continue_script:
     title = False
     contents = []
     for i in range(len(lines)):
-        if lines[i][:2] == "##":
+        if lines[i][:3] == "## ":
             print(lines[i]) # debug 
             contents.append("{}. [{}](#{})\n".format(section_count, (lines[i][3:]).replace("\n",""), section_count))
             lines[i] = (lines[i]).replace("\n"," ") + " <a name = {}></a>\n".format(section_count)
