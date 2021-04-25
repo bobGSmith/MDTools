@@ -5,7 +5,7 @@ Created on Fri Apr 23 11:38:31 2021
 @author: bobby
 """
 # ADD TABLE OF CONTENTS TO MARKDOWN FILES # 
-'''
+
 import sys
 
 test = sys.argv[1]
@@ -14,11 +14,11 @@ if overwrite in ["y","Y","yes","Yes","YES"]:
     newfile = test
 else:
     newfile = input("enter new path/filename:\n")
-'''
+
 
 #test = "TestMD1_output.md"
-newfile = "TestMD1_output_remove.md"
-test = newfile
+#newfile = "TestMD1_output_remove.md"
+
 
 continue_script = True
 
