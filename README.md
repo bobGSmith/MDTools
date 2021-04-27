@@ -7,7 +7,7 @@
 
 
 ## About <a name = 1></a>
-I started writing and making notes in markdown recently, so I made a python script that will add and update a tables of contents to a markdown document. It may never happen, but I if I make any more markdown related stuff I'll add it here. 
+So far we have a markdown Table of contents generator and a csv to markdown converter :)
 
 ## Contents table generator (mdToC.py)<a name = 2></a>
 ### Input document format
