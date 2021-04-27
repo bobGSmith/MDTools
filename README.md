@@ -29,12 +29,12 @@ Enter the path to the md file as the argument in terminal.
 tables must have the csv tags on separate lines and have the same number of commas on each line (no comma needed on last item - may change this) 
 #### Example
 
-<csv>
-name, height, weight, type
-bob, 172, 75, human
-bear, 50, 30, dog
-jaws, 1, 0.1, goldfish
-</csv>
+<csv>  
+name, height, weight, type  
+bob, 172, 75, human  
+bear, 50, 30, dog  
+jaws, 1, 0.1, goldfish  
+</csv>  
 
 ### Convert .csv file
 just enter the path to the csv file as the argument and it will do the rest (use .csv file extension if it is a .csv file)
