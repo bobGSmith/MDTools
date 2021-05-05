@@ -21,18 +21,27 @@ technique for md
 where you use two  
 spaces and end of line
 
-<csv>
-name, height, weight, type
-bob, 172, 75, human
-bear, 50, 30, dog
-jaws, 1, 0.1, goldfish
-</csv>
-
+  
+|name| height| weight| type|
+|:--|:--|:--|:--|
+|bob| 172| 75| human|
+|bear| 50| 30| dog|
+|jaws| 1| 0.1| goldfish|
+<csv+>
+yawn,4,0.5,goldfish
+</csv+>
+  
 ## Table 
 
+  
+|col1| col2| col3| col4|
+|:--|:--|:--|:--|
+|data1| data2| data3| data4|
+|more1| more2| more3| more4|
+  
+  
+## csv
 <csv>
-row1, row2, row3, row4
-data1, data2, data3, data4
-more1, more2, more3, more4
-</csv>
-
+col1, col2, col3
+,,
+data1,data2,data3

@@ -34,14 +34,12 @@ Continue [y/n]  >>
 
 if proceed.lower() in ["y","yes"]:
     test = sys.argv[1]
-    if not test[-4:].lower() == ".csv":
-        overwrite = input("overwrite original file?  [y/n]\n")
-        if overwrite in ["y","Y","yes","Yes","YES"]:
-            newfile = test
-        else:
-            newfile = input("enter new path/filename:\n")
+
+    overwrite = input("overwrite original file?  [y/n]\n")
+    if overwrite in ["y","Y","yes","Yes","YES"]:
+        newfile = test
     else:
-        newfile = test 
+        newfile = input("enter new path/filename:\n")
     
 
     #test = "FL_insurance_sample.csv"
@@ -69,10 +67,13 @@ if proceed.lower() in ["y","yes"]:
             if "<csv>" in lines[i]:
                 table = True 
                 new_lines.append("  \n")
+            if "<csv+>" in lines[i]:
+                table = True
+                row = 1; cols = (lines[i+1].count(",") + 1)
             else:
                 new_lines.append(lines[i])
         elif table:
-            if "</csv>" in lines[i]:
+            if "</csv>" in lines[i] or "</csv+>" in lines[i]:
                 new_lines.append("  \n")
                 table = False
                 row = 0
