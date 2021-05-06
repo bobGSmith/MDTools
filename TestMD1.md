@@ -32,7 +32,11 @@ yawn,4,0.5,goldfish
 </csv+>
   
 ## Table 
-
+<csv>
+bob,house,number
+cow, fly, word
+jung, kie, flip
+</csv>
   
 |col1| col2| col3| col4|
 |:--|:--|:--|:--|
@@ -45,3 +49,4 @@ yawn,4,0.5,goldfish
 col1, col2, col3
 ,,
 data1,data2,data3
+</csv>

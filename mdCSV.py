@@ -67,7 +67,7 @@ if proceed.lower() in ["y","yes"]:
             if "<csv>" in lines[i]:
                 table = True 
                 new_lines.append("  \n")
-            if "<csv+>" in lines[i]:
+            elif "<csv+>" in lines[i]:
                 table = True
                 row = 1; cols = (lines[i+1].count(",") + 1)
             else:
