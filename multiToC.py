@@ -39,6 +39,7 @@ def dir_to_toc (path, root_dir, indentation_level = 0) :
     ToC = ""
     indent = "  " * indentation_level
     files = os.listdir(path) 
+    files = [f  for f in files if f[0] != "."]
     relative_path = path.replace(root_dir, "")
     names = [f.replace(".md","") for f in files]
     links = [relative_path + "/" + f for f in files]
