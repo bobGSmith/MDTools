@@ -4,6 +4,7 @@
 2. [TOC](#2)
 3. [CSV2MD ](#3)
 4. [MultiTOC ](#4)
+5. [Dev To Do ](#5)
 
 
 Add tables of contents for repositores or single files, insert abbreviations, convert csv tables to markdown. 
@@ -71,3 +72,5 @@ Here is an example of what a ToC would might like for a dir contianing 3 markdow
   * more details
 * one more markdown
 
+## Dev To Do <a name = 5></a>
+Made a lot of this early on when  was learning to program. Needs to be reworked a little and some scripts need to be re written as functions that could be imported.  

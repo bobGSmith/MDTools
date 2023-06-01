@@ -17,7 +17,8 @@ The following scripts are included:
   readme.me at the root of the dir
 * MDTools.TOC: Adds a table of contents to a single markdown document at the top (with hyperlinks) 
 '''
-import sys 
-if len(sys.argv) == 1:
-  print(__doc__)
+
+from .abbreviate import abbreviate 
+from .read_write import import_file, write_file
+from .MultiTOC import *
 
