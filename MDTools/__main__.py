@@ -1,3 +1,3 @@
 import sys 
-if len(sys.argv) == 1:
-  print(MDTools.__doc__)
+import MDTools
+print(MDTools.__doc__)
