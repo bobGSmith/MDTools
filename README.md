@@ -9,6 +9,8 @@
 
 Add tables of contents for repositores or single files, insert abbreviations, convert csv tables to markdown. 
 
+Main usecase for me is to have a directory of containing notes. This can have sub directories to organise notes about different topics. The whole thing can be a git repo and stored on github. The hyperlinked table of contents for the repo can be added to the README using MDTools.MultiTOC. You can also open the note repo in obsidian. 
+
 
 ## Install <a name = 1></a>
 
