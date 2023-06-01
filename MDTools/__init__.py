@@ -1,4 +1,4 @@
-'''MDTools 
+'''MDTools
 
 A collection of functions/ scripts for working with markdown documents 
 
@@ -17,6 +17,7 @@ The following scripts are included:
   readme.me at the root of the dir
 * MDTools.TOC: Adds a table of contents to a single markdown document at the top (with hyperlinks) 
 '''
-
-print(__doc__)
+import sys 
+if len(sys.argv) == 1:
+  print(__doc__)
 

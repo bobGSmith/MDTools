@@ -10,15 +10,10 @@ This script can be run from terminal with three args (and fourth optional):
     out : str 
         Optional argument for output path. By default, original file will be replaced. 
 """
-from asyncore import write
-import sys
 
-def import_file (path) : 
-    """Imports text files"""
-    return (open (path, 'r')).read() 
-    
-def write_file (outpath, text) :
-    (open(outpath, 'w')).write(text)       
+import sys
+from .read_write import import_file, write_file
+
 
 def abbreviate (infile, phrase, abbr) : 
     outfile = infile.replace(phrase, abbr)
